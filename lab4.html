@@ -1,0 +1,76 @@
+<!-- LAB 4 DATA VISUALATION & ANALYTICS -->
+
+<!--This coursework is about showing & demonstrating our knowledge learned from the lectures and previous labs to display a 
+sufficiently complex, interactive and animated while containing multiple different graphical output.
+    
+This is where all the JS and CSS files are brought together and positioned to create the over dashboard. -->
+
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Lab 4 Visualization</title>
+    <script src="http://d3js.org/d3.v7.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <h1>World Statistics Visualization</h1>
+    <div id="layout-1">
+        <div id="map-container">
+            <h2>Population Choloropleth</h2>
+            <div>
+                <button id="b1" onclick="displayCount()">Population Count</button>
+                <button id="b1" onclick="displayDenisty()">Population Density</button>
+                <button id="b1" onclick="displayGenderImbalance()">Gender Imbalance</button>
+            </div>
+            <script src="JS/PopCount.js"></script>
+            <script src="JS/PopDensity.js"></script>
+            <script src="JS/GenderImbalance.js"></script>
+
+        </div>
+
+        <div id="gender-imbalance-container">
+            <h2>Gender Count Bar Chart</h2>
+            <script src="JS/GenderBar.js"></script>
+        </div>
+
+    </div>
+    <div id="layout-2">
+        <div id="bubble-container">
+            <div id="txt-container">
+                <h2>World Major Religions</h2>
+                <p>A visualisation for the comparison in size of population for the religions between the countries.</p>
+                <p>HOVER OVER THE BUBBLES.</p>
+            </div>
+           
+            <script src="JS/WorldReligions.js"></script>
+        </div>
+        <div id="timeline-container">
+            <h2>Religion Growth Timeline</h2>
+            <p>A visualisation to show how the religions in the world spread over time across the globe.</p>
+            <div id="play-clock">
+                <select id="dropDown"></select>
+                <button id="play" onclick="runAnimation()">Play</button>
+                <span id="clock">Year</span>
+            </div>
+            <svg id="mapViz" width="800" height="450"></svg>
+            <script src="JS/ReligionTimeline.js"></script>
+        </div>
+
+    </div>
+
+    <div id="layout-3">
+        <h2>Literacy Vs Male to Female Ratio Scatter Plot</h2>
+        <input type="number" id="buttonYcont" value=3>
+        <div id="scatter">
+            <script src="JS/Scatter.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>
