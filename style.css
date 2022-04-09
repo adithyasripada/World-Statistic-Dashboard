@@ -1,0 +1,201 @@
+/* LAB 4 DATA VISUALATION & ANALYTICS  */
+
+/* This coursework is about showing & demonstrating our knowledge learned from the lectures and previous labs to display a 
+sufficiently complex, interactive and animated while containing multiple different graphical output.
+    
+This file is resposible for some of the design aspect of the dashboard  */
+
+
+
+body {
+    background-color: #1F386B;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#b1 {
+    background-color: #e1ecf4;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 0.5px solid powderblue;
+    border-bottom: 0.5px solid powderblue;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    color: #39739d;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+}
+
+#b1:hover,
+#b1:focus {
+    background-color: powderblue;
+    color: #2c5777;
+}
+
+
+
+.map-svg {
+
+    cursor: pointer;
+}
+
+
+#layout-1 {
+    overflow: hidden;
+    background-color: #172a50;
+    border: 3px solid black;
+}
+
+#map-container {
+    left: 0%;
+
+    max-width: 750px;
+    float: left;
+}
+
+#gender-imbalance-container {
+    max-width: 750px;
+    float: right;
+}
+
+#layout-2 {
+    overflow: hidden;
+    background-color: #172a50;
+    border: 3px solid black;
+    margin-top: 10px;
+    height: 800px;
+
+}
+
+#layout-3 {
+    overflow: hidden;
+    background-color: #172a50;
+    border: 3px solid black;
+    width: 1497px;
+    height: 800px;
+    margin-top: 10px;
+
+}
+
+#timeline-container {
+    /* border: 3px solid black ; */
+    max-width: 750px;
+    float: right;
+}
+
+#bubble-container {
+    /* border: 3px solid black ; */
+    max-width: 700px;
+    float: left;
+}
+
+#play-clock {
+    text-align: center;
+}
+
+
+
+#mapViz {
+    margin-top: 20px;
+}
+
+#play {
+    background-color: #e1ecf4;
+    border: 0.5px solid powderblue;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    color: #39739d;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15385;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+}
+
+
+#play:hover,
+#play:focus {
+    background-color: powderblue;
+    color: #2c5777;
+}
+
+
+
+
+#dropDown {
+    background-color: rgb(0, 0, 0);
+    color: #7cc8ff;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15385;
+    margin: 10px;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #7cc8ff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(225, 100%, 50%);
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8864c;
+  }
+
+  #layout-3{
+      text-align: center;
+  }
+
+  #buttonYcont{
+    background-color: #baffdc;
+    border: 3.5px solid #33FF98;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, 0.677) 0 1px 0 0 inset;
+    color: #000000;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.15385;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+  }
